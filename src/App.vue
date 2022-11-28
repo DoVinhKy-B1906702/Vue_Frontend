@@ -1,26 +1,29 @@
+
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <HeaderItem header="hehe" />
+    <TodosVue description='Haluya' name='Ky' address="An Giang"  />
+  </div>
 </template>
 
+<!-- filename: HeaderItem.vue -->
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import HeaderItem from './components/Header';
+import TodosVue from './components/Todos';
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    HeaderItem,
+    TodosVue
+  },
+ 
 }
+
+
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.myApp {
+  color: red;
 }
 </style>
